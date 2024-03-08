@@ -1,21 +1,16 @@
 [package]
-name = "candle-tutorial"
+name = "candle-roberta"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+path = "src/lib.rs"
 
 [dependencies]
+anyhow = "1.0.80"
 candle-core = { git = "https://github.com/huggingface/candle.git", version = "0.4.2" }
 candle-nn = { git = "https://github.com/huggingface/candle.git", version = "0.4.2" }
-serde = "1.0"
-anyhow = "1.0"
 hf-hub = "0.3.2"
-tokenizers = "0.14.1"
-serde_json = "1.0.107"
-records = "0.2.0"
-
-
-[[example]]
-name = "tensor"
-
+serde = "1.0.197"
+serde_json = "1.0.114"
+tokenizers = "0.15.2"
